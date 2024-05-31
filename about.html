@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie - for people</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <!-- preload images -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+  <style>
+    .link {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+      }
+      
+      .active, .btn:hover {
+        background-color: orange;
+        color: white;
+      } 
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo" style="color: blue;">Foodie<span class="span">.</span></a>
+      </h1>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="nav-item">
+            <a href="index.html" class="navbar-link" data-nav-link style="color: blue;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="navbar-link link active" data-nav-link>About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="shop.html" class="navbar-link" data-nav-link style="color: blue;">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="navbar-link" data-nav-link style="color: blue;">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="navbar-link" data-nav-link style="color: blue;">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT US -->
+  <section class="section section-divider gray about" id="about">
+    <div class="container">
+      <div class="about-banner">
+        <img src="./assets/images/about-banner.png" width="509" height="459" loading="lazy" alt="Delicious Food" class="w-100 about-img">
+        <img src="./assets/images/sale-shape-red.png" width="216" height="226" alt="Get up to 50% off now" class="abs-img scale-up-anim">
+      </div>
+      <div class="about-content">
+        <h2 class="h2 section-title">
+          Welcome to Foodie
+          <span class="span">Your Culinary Journey Starts Here!</span>
+        </h2>
+        <p class="section-text">
+          At Foodie, we believe that food is more than just sustenance – it’s an experience, a passion, and a way to connect with others. Our mission is to inspire and empower you to create delicious meals, explore new flavors, and share the joy of cooking with your loved ones.
+        </p>
+        <p class="section-text">
+          Whether you're a seasoned chef or a kitchen novice, our website offers a variety of recipes, cooking tips, and food-related content tailored to all skill levels. From quick and easy weeknight dinners to gourmet dishes for special occasions, you'll find everything you need to make every meal a memorable one.
+        </p>
+        <ul class="about-list">
+          <li class="about-item">
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <span class="span">Delicious & Healthy Recipes</span>
+          </li>
+          <li class="about-item">
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <span class="span">Family-Friendly Meals</span>
+          </li>
+          <li class="about-item">
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <span class="span">Expert Cooking Tips</span>
+          </li>
+          <li class="about-item">
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <span class="span">Food Reviews & Recommendations</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer id="Contact">
+    <div class="footer-container" id="contact">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>Welcome to our food website where we share delicious recipes, food tips, and culinary inspiration. Join us on our journey of exploring flavors and cooking techniques.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact uS</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact" id="Contact">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Email: <a href="mailto:info@yourfoodwebsite.com">bajutayohane@gmail.com</a></li>
+          <li>Phone: +44 7909 831938</li>
+        </ul>
+        <div class="social-media">
+          <a href="https://www.facebook.com/yourpage"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/yourprofile"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="https://www.twitter.com/yourprofile"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Food Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

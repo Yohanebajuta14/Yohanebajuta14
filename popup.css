@@ -1,0 +1,72 @@
+    .popup-form {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+    .popup-form.active {
+        display: block;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    .overlay.active {
+        display: block;
+    }
+    .order-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .order-form label {
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: bold;
+    }
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1em;
+        width: 100%;
+    }
+    .order-form input[type="submit"] {
+        background-color: #0073e6;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .order-form input[type="submit"]:hover {
+        background-color: #005bb5;
+    }
+    .close-btn {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 20px;
+    }
+    .close-btn:hover {
+        background-color: #c0392b;
+    }
